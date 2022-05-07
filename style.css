@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
 }
 
 .showcase-wrapper {
@@ -61,14 +67,22 @@ input[type="button"] {
     color: #fff;
 }
 
-/* input[type="button"]:active {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
-} */
+input[type="button"]:focus {
+    transform: scale(.98);
+}
 
 .line-break {
     margin: 40px 0;
+}
+
+.line-break p {
+    display: inline;
+}
+
+.line-break > div {
+    height: 2px;
+    background-color: black;
+    display: inline;
 }
 
 .line {
