@@ -17,7 +17,7 @@ body {
 
 .form-wrapper {
     flex: 1;
-    justify-content: center;
+   
 }
 
 .form-wrapper,
@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .form-title > img {
@@ -71,22 +72,23 @@ input[type="button"]:focus {
     transform: scale(.98);
 }
 
-.line-break {
-    margin: 40px 0;
-}
-
-.line-break p {
-    display: inline;
-}
-
-.line-break > div {
+.line-break  {
+    margin-top: 40px ;
     height: 2px;
-    background-color: black;
-    display: inline;
+    background-color: rgb(158, 157, 157);
+    width: 55%;
 }
 
-.line {
-    border-top: 1px solid rgb(24, 22, 22);
+.line-breaker {
+    margin-top: -13px;
+    color: rgb(158, 157, 157);
+    background-color: #fff;
+    z-index: 10;
+    padding: 0 10px;
+}
+
+.socials {
+    margin-top: 40px;
 }
 
 .socials > a {
@@ -109,6 +111,11 @@ input[type="button"]:focus {
 .socials > a img {
     width: 10%;
     margin-right: 10px;
+}
+
+.sign-up {
+    color: #000;
+    font-weight: bold;
 }
 
 .form-wrapper > a {
@@ -134,5 +141,11 @@ input[type="button"]:focus {
 
     .showcase-image {
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .line-break {
+        width: 92%;
     }
 }
